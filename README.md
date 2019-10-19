@@ -16,6 +16,7 @@ Test installation:
 $docker-compose --version
 `
 should return something like 
+
 `docker-compose version 1.24.1, build 1110ad01`
 
 
@@ -25,10 +26,15 @@ should return something like
 `sudo apt-get update`
 
 `sudo apt-get install \
+
     apt-transport-https \
+    
     ca-certificates \
+    
     curl \
+    
     gnupg-agent \
+    
     software-properties-common`
     
 Add Docker’s official GPG key:

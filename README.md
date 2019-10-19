@@ -55,6 +55,14 @@ $ sudo add-apt-repository \
      `$(lsb_release -cs)` with `disco`. (somewhat hacky, but it does work)
      
      
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+See that everything works:
+`$ sudo docker run hello-world`
+
+
+     
  ## Install Django
  sudo apt-get install python3 python3-pip
 sudo apt-get install python3-django

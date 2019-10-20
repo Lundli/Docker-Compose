@@ -1,8 +1,9 @@
 # Docker-Compose
-Installation guide for Ubuntu. Version 19.10 (eoan) used for this writeup.
+Installation guide for Ubuntu. 
+<br/>Version 19.10 (eoan) used for this writeup.
 
 
-## Table of Contents
+Table of Contents
 =================
 * [Install Compose](#install-compose)
 * [Install Docker](#install-docker)
@@ -11,7 +12,7 @@ Installation guide for Ubuntu. Version 19.10 (eoan) used for this writeup.
 
 
 ## Install Compose
-This is a short writeup from the [documentation](https://docs.docker.com/compose/install/).
+Short writeup from the [documentation](https://docs.docker.com/compose/install/).
 
 
 **1. Run this command to download the current stable release of Docker Compose:**

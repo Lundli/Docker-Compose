@@ -1,18 +1,18 @@
 # Docker-Compose
-Ubuntu 19.10 Installation
+Installation guide for Ubuntu. Version 19.10 (eoan) used for this writeup.
 
 
-Table of Contents
+## Table of Contents
 =================
 * [Install Compose](#install-compose)
 * [Install Docker](#install-docker)
     * [Ubuntu based distro](#ubuntu-based-distro)
+* [Install Django](#install-django)
 
 
 ## Install Compose
 This is a short writeup from the [documentation](https://docs.docker.com/compose/install/).
 
-The following commands will work on Ubuntu 19.*
 
 **1. Run this command to download the current stable release of Docker Compose:**
 ```
@@ -54,18 +54,19 @@ sudo apt-get install \
 ```
     
 **3. Add Docker’s official GPG key:**
-`
-**rl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-`
+```
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
 **Verify fingerprints**
-Verify that you have a key with fingerprint `9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88`
-`
+
+Verify that you have a key with fingerprint `9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88`<br/>
+```
 $ sudo apt-key fingerprint 0EBFCD88
-`
+```
 
 **4. To install the stable repository**
-**x86_64 / amd64**
+<br/>(x86_64 / amd64)
 ```
 $ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -73,7 +74,7 @@ $ sudo add-apt-repository \
    stable"
 ```
 
-#### Ubuntu-based-distro
+### Ubuntu-based-distro
 
 If you are using a Debian based distro (such as Linux Mint), you have to replace `$(lsb_release -cs) \` with the name of your upstream distro.
 
@@ -97,22 +98,33 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
 **3. Verfiy that installation succeeded**
+
 `
 $ sudo docker run hello-world
 `
 
 
-### (Upgrade docker enginge - community)
+#### To Upgrade docker enginge - community
 To upgrade Docker Engine - Community, first run `$ sudo apt-get update`, then follow the installation instructions, choosing the new version you want to install.
 
 
    
    
- ### Install Django
- sudo apt-get install python3 python3-pip
-sudo apt-get install python3-django
-
-check:
-django-admin --version
+ ## Install Django
  
+**Update package manager**
+```
+$ sudo apt-get update
+```
+ 
+
+```
+$ sudo apt-get install python3 python3-pip
+$ sudo apt-get install python3-django
+```
+
+**Verify that Django installation succeeded:**
+```
+$ django-admin --version
+```
    

@@ -6,6 +6,7 @@ Table of Contents
 =================
 * [Install Compose](#install-compose)
 * [Install Docker](#install-docker)
+    * [Ubuntu based distro](#ubuntu-based-distro)
 
 
 ## Install Compose
@@ -72,7 +73,7 @@ $ sudo add-apt-repository \
    stable"
 ```
 
-**Tips**
+#### Ubuntu-based-distro
 
 If you are using a Debian based distro (such as Linux Mint), you have to replace `$(lsb_release -cs) \` with the name of your upstream distro.
 
@@ -84,16 +85,16 @@ If you are using Ubuntu 19.10 (which as of 20.10.2019) is not currently supporte
 
 
 
-## INSTALL DOCKER ENGINE - COMMUNITY
+### Install docker engine - community
 **1. Update package manager**
-`
+```
 $ sudo apt-get update
-`
+```
 
 **2. Install the latest version of Docker Engine - Community and containerd (see documentation to install a specific version)**
-`
+```
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-`
+```
 
 **3. Verfiy that installation succeeded**
 `
@@ -101,12 +102,13 @@ $ sudo docker run hello-world
 `
 
 
-## (Upgrade docker enginge - community)
+### (Upgrade docker enginge - community)
 To upgrade Docker Engine - Community, first run `$ sudo apt-get update`, then follow the installation instructions, choosing the new version you want to install.
 
 
-     
- ## Install Django
+   
+   
+ ### Install Django
  sudo apt-get install python3 python3-pip
 sudo apt-get install python3-django
 

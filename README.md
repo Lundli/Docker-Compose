@@ -128,4 +128,7 @@ $ sudo apt-get install python3-django
 ```
 $ django-admin --version
 ```
-   
+
+
+Quickstart Compose and Django
+--in progress--, see [link](https://docs.docker.com/compose/django/)

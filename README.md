@@ -2,22 +2,32 @@
 Ubuntu 19.10 Installation
 
 
+Table of Contents
+=================
+* [Install Compose](#install-compose)
+* [Install Docker](#install-docker)
+
+
 ## Install Compose
+This is a short writeup from the [documentation](https://docs.docker.com/compose/install/).
 
-https://docs.docker.com/compose/install/
+The following commands will work on Ubuntu 19.*
 
-`sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+**1. Run this command to download the current stable release of Docker Compose:**
+```
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+**2. Apply executable permissions to the binary:**
+```
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
 
-sudo chmod +x /usr/local/bin/docker-compose`
+**Test installation:**
+```
+$ docker-compose --version
+docker-compose version 1.24.1, build 1110ad01
+```
 
-
-Test installation:
-`
-$docker-compose --version
-`
-should return something like 
-
-`docker-compose version 1.24.1, build 1110ad01`
 
 
 
